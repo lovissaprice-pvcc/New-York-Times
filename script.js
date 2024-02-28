@@ -42,32 +42,36 @@ function getAuthor(bookName){
     return match;
 
 }
-//console.log(getAuthor("LIFE OF PI"))
+console.log(getAuthor("LIFE OF PI"))
 
-// function findLongest(publisher){
-//     var longest = "";
+function findLongestTitle(publisher){
+    var longest = "";
 
-//     for(var i = 0; i < authors.length; i++){
-//         if(publishers[i] == publisher){
-//             if(bookNames[i].length > longest){
-//                 longest = bookNames[i];
-//             }
-//         }
-//     }
-//     return longest;
-// }
+    for(var i = 0; i < authors.length; i++){
+        if(publishers[i] == publisher){
+            if(bookNames[i].length > longest.length){
+                longest = bookNames[i];
+            }
+        }
+    }
+    return longest;
+}
 
-// console.log(findLongest("Penguin Group"))
+console.log(findLongestTitle("Penguin Group"))
+
+
+
 
 function findMostBooks(publisher){
 
     var match = "";
     var mostBooks = 0;
+    
 
     for(var i = 0; i < publishers.length; i++){
         if(publishers[i]==publisher){
             if(){
-                var mostBooksIdx = i;
+    
             }
         }
     }
