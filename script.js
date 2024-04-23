@@ -42,7 +42,7 @@ function getAuthor(bookName){
     return match;
 
 }
-console.log(getAuthor("LIFE OF PI"))
+//console.log(getAuthor("LIFE OF PI"))
 
 function findLongestTitle(publisher){
     var longest = "";
@@ -57,25 +57,27 @@ function findLongestTitle(publisher){
     return longest;
 }
 
-console.log(findLongestTitle("Penguin Group"))
+//console.log(findLongestTitle("Penguin Group"))
 
 
 
+function findLongestTime(publisher){
 
-function findMostBooks(publisher){
+    var mostTime = 0;
+    var winner = ""
 
-    var match = "";
-    var mostBooks = 0;
-    
+    for(var i = 0; i < publisher.length; i++){
+        if(publishers[i] == publisher){
 
-    for(var i = 0; i < publishers.length; i++){
-        if(publishers[i]==publisher){
-            if(){
-    
-            }
+        if(weeks[i] > mostTime){
+            winner = bookNames[i]
         }
     }
 }
+    return winner
+
+}
+console.log(findLongestTime("Penguin Press"));
 
 
 
